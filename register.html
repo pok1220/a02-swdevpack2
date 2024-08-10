@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style_register.css">
+        <link rel="stylesheet" href="style_index.css">
+        <title>ParisTourRegisteration</title>
+        <link rel="icon" type="image/x-icon" href="image/Paris_02.jpg">
+    </head>
+        <body>
+            <div id="register_container">
+                <div id="welcome">
+                    RegisterParisTour
+                </div>
+                <div id="imageRegister">
+                    <img class="imageRegister01" src="image/Paris_07.jpg" alt="viewInboat">
+                </div>
+                <div class="register_maincontent">
+                    <form id="yourRegister">
+                        <div>
+                            <p class="HeadRegister">Please Select Package</p>
+                            <select id="PackageSelectID" name="PackageSelect" class="detailRegister" size="2">
+                                <option value="Premium">Premium Package (small group)</option>
+                                <option value="Supreme">Supreme Package (normal group)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="HeadRegister">Need The Plane Ticket?</p>
+                            <input type="checkbox" id="planeTicketNeedID" class="detailRegister" name="planeTicket">
+                            <label for="planeTicketNeedID">YES</label>
+                        </div>
+                        <div>
+                            <p class="HeadRegister">People Quantity</p>
+                            <input id="Quantity_peopleID" class="detailRegister" type="number" min=0 max="40" name="Quantity_people" value="0">
+                            <p class="HeadRegister">Yourname</p>
+                            <input id="YournameID" class="detailRegister" type="text" name="Yourname" placeholder="Type Your Name Here">
+                            <p class="HeadRegister">Conatact number</p>
+                            <input id="ConatactNumberID" class="detailRegister" type="tel" placeholder="Type Your Tel Here">
+                        </div>
+                    </form>
+                    <div>
+                        <button id="sendData">SendForm</button>
+                    </div>
+                </div>
+
+                <div class="reg_thank">Thank You for Join with Us</div>
+
+                <div id="myNameReg">นายธิติวุฒิ คุณาวุฒิ 6530201421</div>
+                <div class="backContent">
+                    <a href="index.html" class="backLink">Back</a>
+                </div>
+            </div>
+            <script src="register.js"></script>
+        </body>
+    
+    
+</html>
