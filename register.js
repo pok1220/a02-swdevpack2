@@ -18,11 +18,7 @@ function sendForm(){
     if(quantity<=0 || quantity>15){
         alert("กรอกจำนวนคนในช่วง 1-15 คนเท่านั้น")
     }
-}
 
-
-document.getElementById("planeTicketNeedID").addEventListener("click",buyTicket);
-function buyTicket(){
     if(document.getElementById("planeTicketNeedID").checked){
         if (confirm("ต้องการซื้อบัตรโดยสารเครื่องบินเองใช่หรือไม")) {
             alert("คุณเลือกซื้อบัตรโดยสารเครื่องบินเอง")
@@ -31,3 +27,15 @@ function buyTicket(){
           }
     }
 }
+
+
+// document.getElementById("planeTicketNeedID").addEventListener("click",buyTicket);
+// function buyTicket(){
+//     if(document.getElementById("planeTicketNeedID").checked){
+//         if (confirm("ต้องการซื้อบัตรโดยสารเครื่องบินเองใช่หรือไม")) {
+//             alert("คุณเลือกซื้อบัตรโดยสารเครื่องบินเอง")
+//           } else {
+//             document.getElementById("planeTicketNeedID").checked=false;
+//           }
+//     }
+// }
